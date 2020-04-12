@@ -1,0 +1,3 @@
+this assignment was frustrating.  I spent a lot of time trying to orient myself with the logic and template which Ron explained very well.  I've been struggling with the syntax and how priority is given with the JS file but I couldn't follow the logic that Ron explained which is frustrating.  If someone could just show me what I did wrong then all the hours I spent on this won't be in vain.
+
+I was able to get the pw generator to offer prompts and generate the pw but the number of characters doesn't match what is entered into the prompt.  I spent much more time than I should have.  I've been taking the freecodecamp.org lessons and I think I learn better that way.  It's helpful to have simpler projects and then build up to the more intermediate/advanced problems.  

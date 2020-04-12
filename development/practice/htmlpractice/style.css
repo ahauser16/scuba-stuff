@@ -1,0 +1,30 @@
+body {
+
+background-color: crimson;
+
+}
+
+p {
+color: antiquewhite;
+font-family: 'Patua One', cursive;
+
+}
+
+h1 {
+
+    font-family: 'Patua One', cursive;
+    border: 5px;
+    padding: 10px;
+    border: 10px;
+    border-style: dotted;
+    text-align: center;
+    width: 250px;
+
+}
+
+ul  {
+
+    font-family: 'Patua One', cursive;
+
+
+}

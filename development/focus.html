@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {           
+
+          font-family: Arial, Helvetica, sans-serif;
+                    
+            }
+        
+        /* Style the header */
+        header {
+        
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: rgb(168, 17, 17);
+          text-decoration:underline black;
+          font-family: 'Bungee', cursive;
+          text-shadow: 12px -12px rgb(238, 241, 59);
+          text-shadow: 2px 2px 8px rgb(7, 6, 6); 
+                }
+        li      {
+          
+          color: rgb(243, 7, 7);
+          text-decoration:underline black;
+          font-family: 'Bungee', cursive;
+          text-shadow: 12px -12px rgb(238, 241, 59);
+          text-shadow: 2px 2px 8px rgb(7, 6, 6); 
+
+
+                }
+
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 30%;
+          height: 300px; /* only for demonstration, should be removed */
+          background: rgb(143, 119, 233);
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color: #e959a1;
+          height: 300px; /* only for demonstration, should be removed */
+        }
+        
+        /* Clear floats after the columns */
+        section:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .jumbotron {
+
+        margin-top:20px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR82T1y_bK_G7NKGLiS0rc7Bq-NqntBhFVgyRL2uEHbnbdc0fPA");
+        background-size: cover;
+        }
+
+        </style>
+        </head>
+        <body>
+        
+        <h2>CSS Layout Float</h2>
+        <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+        <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+        
+        <header>
+          <h2 class="jumbotron"> HOUND CITY MUDDA FUCKA</h2>
+        </header>
+        
+        <section>
+          <nav>
+            <ul>
+                <li style=font-family: Bungee cursive;>ma famiglia</li>
+              <li><a href="#">London</a></li>
+              <li><a href="#">Paris</a></li>
+              <li><a href="#">Tokyo</a></li>
+            </ul>
+          </nav>
+          
+          <article>
+            <h1>London</h1>
+            <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+          </article>
+        </section>
+        
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+              </div>
+        </div>
+
+
+
+
+        <footer>
+          <p>Footer</p>
+        </footer>
+        
+        </body>
+        </html>

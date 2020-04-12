@@ -31,31 +31,51 @@ function getPrompts() {
     useSymbols = confirm("Do you want to use symbols?");
     useNumbers = confirm("Do you want to use numbers?");
 }
+function userOptions() {
+        if (useUpperCase === true){
+            addCharFromUPArray(upperCaseArray);  }
+
+        if (useSymbols === true){
+            addCharFromsymArray(symbolsArray);  }
+
+        if (useNumbers === true){
+            addCharFromnumArray(numbersArray);  } 
+}
+
 
 function buildPassword() {
     // check for number and proper length of pass
     
     if (!isNaN(parseInt(numOfChars)) && numOfChars >= 8 && numOfChars <= 128) {
         for (var i = 0; i < numOfChars; i++) {
-            addCharFromArray(lowerCaseArray);  }
-            if (useUpperCase === true){
-            addCharFromArray(symbolsArray);  }
-            if (useSymbols === true){
-            addCharFromArray(numbersArray);  }
-            if (useNumbers === true){
-              addCharFromArray(symbolsArray);  }
+            //check userOptions
+            addCharFromlcArray(lowerCaseArray);  
+            addCharFromUPArray(userOptions);
+            addCharFromsymArray(symbolsArray);
+            addCharFromnumArray(numbersArray);
+        }
+            
     }
     return passwordResult;
 }
 
 // function that adds a character from one array to the pw
-function addCharFromArray(arr) {
+function addCharFromlcArray(arr) {
     // build pass
     passwordResult += getRandomFromArray(lowerCaseArray);
+}
+function addCharFromUPArray(arr) {
+
     passwordResult += getRandomFromArray(upperCaseArray);
+}
+function addCharFromsymArray(arr) {
+
     passwordResult += getRandomFromArray(symbolsArray);
+}
+function addCharFromnumArray(arr) {
     passwordResult += getRandomFromArray(numbersArray);
 }
+
 // utility func to get a random element from array
 function getRandomFromArray(arr) {
     return arr[parseInt(Math.random() * arr.length)];
